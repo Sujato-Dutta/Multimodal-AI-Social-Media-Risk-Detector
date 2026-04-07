@@ -8,6 +8,12 @@
 [![CLIP](https://img.shields.io/badge/OpenAI-CLIP-412991?logo=openai&logoColor=white)](https://github.com/openai/CLIP)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+<br/>
+<div align="center">
+  <img src="Demo_pic.jpg" alt="Multimodal Risk Detector Application Demo" width="100%"/>
+</div>
+<br/>
+
 ---
 
 ## 🎯 Problem Statement
