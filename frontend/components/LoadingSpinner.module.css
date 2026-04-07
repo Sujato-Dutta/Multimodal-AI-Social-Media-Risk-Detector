@@ -1,0 +1,88 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 24, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.card {
+  background: var(--surface-secondary);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  text-align: center;
+  box-shadow: var(--glow-orange-strong);
+  animation: fadeInUp 0.3s ease-out;
+  max-width: 380px;
+  width: 90%;
+}
+
+/* Spinner rings */
+.spinnerWrapper {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.ring:nth-child(1) {
+  border-top-color: var(--orange-400);
+  animation: spin 1s linear infinite;
+}
+
+.ring:nth-child(2) {
+  inset: 6px;
+  border-right-color: var(--orange-600);
+  animation: spin 1.5s linear infinite reverse;
+}
+
+.core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--orange-400);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px var(--orange-400);
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+.message {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.stepDot {
+  font-size: 0.65rem;
+  color: var(--orange-500);
+}

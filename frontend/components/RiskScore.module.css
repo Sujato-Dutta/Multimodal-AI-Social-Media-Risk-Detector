@@ -1,0 +1,89 @@
+.container {
+  background: var(--surface-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.scoreRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.scoreValue {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  transition: color var(--transition-normal);
+}
+
+.scoreMax {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Progress bar */
+.barTrack {
+  position: relative;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: visible;
+  margin-bottom: 0.5rem;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: progress-fill 1s ease-out;
+}
+
+.marker {
+  position: absolute;
+  top: -2px;
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

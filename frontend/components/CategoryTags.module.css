@@ -1,0 +1,89 @@
+.container {
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  background: var(--surface-glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.catName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.scoreSection {
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.catScore {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.catMax {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.miniBar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.miniFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s ease-out;
+  animation: progress-fill 0.8s ease-out;
+}
+
+.confidence {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}

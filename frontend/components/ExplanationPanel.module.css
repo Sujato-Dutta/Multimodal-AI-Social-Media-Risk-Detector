@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeInUp 0.5s ease-out 0.2s both;
+}
+
+.section {
+  background: var(--surface-glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.sectionTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sectionIcon {
+  font-size: 1rem;
+}
+
+.summary {
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* Risk prompt matches */
+.promptList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.promptItem {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  transition: border-color var(--transition-fast);
+}
+
+.promptItem:hover {
+  border-color: var(--border-accent);
+}
+
+.promptHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.promptCategory {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--orange-400);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.promptSim {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--orange-300);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.promptText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.simBar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.simFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange-600), var(--orange-400));
+  border-radius: 2px;
+  transition: width 0.6s ease-out;
+}
+
+/* Caption flags */
+.flagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.flag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Alignment */
+.alignmentRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.alignmentBar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.alignmentFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange-600), var(--risk-low));
+  border-radius: 3px;
+  transition: width 0.8s ease-out;
+}
+
+.alignmentValue {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.alignmentHint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 0.25rem;
+}
+
+.footerText {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
